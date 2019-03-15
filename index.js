@@ -1,6 +1,15 @@
 const express = require('express')
+const mongoose = require('mongoose')
 
 const app = express()
+
+//connecting to database
+const db = require('./config/keys').mongoURI
+mongoose.connect(db)
+    .then(() => console.log('Mongodb connected'))
+    .catch((err) => console.log(err))
+
+
 
 app.get('/', (req, res) => {
     res.send('express is up and running')
