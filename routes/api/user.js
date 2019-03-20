@@ -1,8 +1,9 @@
 const express = require('express')
 const gravatar = require('gravatar')
 const bcrypt = require('bcryptjs')
-const keys=require('../../config/keys')
-const jwt=require('jsonwebtoken')
+const keys = require('../../config/keys')
+const jwt = require('jsonwebtoken')
+const passport = require('passport')
 const router = express.Router()
 const User = require('../../models/User')
 
@@ -61,18 +62,18 @@ router.post('/login', (req, res) => {
             .then(Matched => {
                 if (Matched) {
                     //User matched
-                    const payload={id:user.id,name:user.name,avatar:user.avatar} //create jwt payload
+                    const payload = { id: user.id, name: user.name, avatar: user.avatar } //create jwt payload
 
 
                     //sign token
-                    jwt.sign(payload,keys.secretOrKey,{expiresIn:3600},
-                      (err,token)=>{
-                          res.json({
-                              success:true,
-                              token: 'Bearer' + token
-                          })
+                    jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 },
+                        (err, token) => {
+                            res.json({
+                                success: true,
+                                token: 'Bearer' + token
+                            })
 
-                    })
+                        })
                 } else {
                     return res.status(400).json({ password: 'password incorrect' })
                 }
@@ -80,6 +81,12 @@ router.post('/login', (req, res) => {
     })
 
 })
+
+//protected token user route
+router.get('/current', passport.authenticate('jwt', { session: false })),
+    (req, res) => {
+        res.json({ msg: 'Success' })
+    }
 
 
 
