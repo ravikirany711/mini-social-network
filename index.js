@@ -30,7 +30,7 @@ mongoose.connect(db)
 app.use(passport.initialize())
 
 //passport config
-
+require('./config/passport')(passport)
 
 
 
