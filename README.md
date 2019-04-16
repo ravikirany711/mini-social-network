@@ -4,6 +4,7 @@ A network where people of similar interests can connect which is created using M
 
 Which is inspired by an app called dev-connector ,created by traversy
 
+<<<<<<< HEAD
 The objectives of building this application are as follows:
 
 To learn how thingd fit together in a certain app
@@ -23,8 +24,12 @@ The backend section of this course involves three technolgies namely MEN
 Which stands for Mongo, Express and Node , Node js is a Javascript run time engone which is built on chromes v8 engine and is quite popular for being able to execute js out of the browser.
 
 The Second part includes express , which can be installed through npm as npm install express --save(to save it in the dev dependencies)
-The express app is used to interact with servers create servers and deal woth responses and requests
+The express app is used to interact with servers create servers and deal with responses and requests
 
 Express also helps in dealing with routes making to easier to build the application and makes the whole development process easier
 
 The following section contains an in-depth view of the backend and also give some examples to better understand them
+=======
+This app mainly deals with the amount of information needed to create an app with enough front end and backend objectives
+
+>>>>>>> 6b1eea3864e975e4f47a0b992fe6313af0a06ef3
