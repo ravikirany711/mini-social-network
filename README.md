@@ -17,4 +17,7 @@ Javascript helps us to build things on both front end and backend , the best par
 
 The front of this app consists of a framework called react which is a component based framework which was developed at facebook and been around for a while now
 
-The fllowing section of this course deals with the backend technologies of the app we are building out
+The following section of this course deals with the backend technologies of the app we are building out
+
+The backend section of this course involves three technolgies namely MEN
+Which stands for Mongo, Express and Node , Node js is a Javascript run time engone which is built on chromes v8 engine and is quite popular for being able to execute js out of the browser
