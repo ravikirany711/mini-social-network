@@ -24,3 +24,7 @@ Which stands for Mongo, Express and Node , Node js is a Javascript run time engo
 
 The Second part includes express , which can be installed through npm as npm install express --save(to save it in the dev dependencies)
 The express app is used to interact with servers create servers and deal woth responses and requests
+
+Express also helps in dealing with routes making to easier to build the application and makes the whole development process easier
+
+The following section contains an in-depth view of the backend and also give some examples to better understand them
