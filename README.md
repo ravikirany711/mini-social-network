@@ -29,7 +29,7 @@ The express app is used to interact with servers create servers and deal with re
 Express also helps in dealing with routes making to easier to build the application and makes the whole development process easier
 
 The following section contains an in-depth view of the backend and also give some examples to better understand them
-=======
+
 This app mainly deals with the amount of information needed to create an app with enough front end and backend objectives
 
->>>>>>> 6b1eea3864e975e4f47a0b992fe6313af0a06ef3
+The react library uses redux for better management of state and props
